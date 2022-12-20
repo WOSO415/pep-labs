@@ -13,12 +13,7 @@ public class Parrot {
      */
     public String copy(String text){
         return "polly";     
-    }
-
-    public String copy2(String text){
-        return "hello"
-    }
-    
+    }   
 }
 
 
