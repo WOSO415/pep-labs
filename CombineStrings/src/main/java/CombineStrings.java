@@ -9,8 +9,9 @@ public class CombineStrings {
      */
     
     public String combine(String a , String b){
-    
-        return (a + b);
+        String s = a + b;
+        return (s);
+        
     }
    
 }
