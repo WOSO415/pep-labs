@@ -13,8 +13,8 @@ public class Comparators {
      * @param b the second number to be compared.
      * @return true if a is equal to b, false otherwise.
      */
-    public boolean isEqual(int a, int b){
-        return false;
+    public boolean isEqual(int a == int b){
+        return true;
     }
 
     /**
