@@ -70,7 +70,7 @@
     :count_tests: 2
     :count_tests_passed: 0
     :tests:
-      parrotTestHello: 1
+      parrotTestHello: 0
       parrotTestPolly: 0
       combineTest1: 0
       combineTest2: 0
