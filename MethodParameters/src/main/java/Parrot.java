@@ -8,9 +8,10 @@ public class Parrot {
      * System.out.println(str); -> prints out "hello"
      *
      * @param text is a parameter passed into this method by whatever called it.
-     * @return text.
+     * @return 
      */
     public String copy(String text){
-        return "return text please!";
+               
+        return 
     }
 }
