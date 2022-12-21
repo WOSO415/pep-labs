@@ -8,10 +8,18 @@ public class Parrot {
      * System.out.println(str); -> prints out "hello"
      *
      * @param text is a parameter passed into this method by whatever called it.
-     * @return 
      */
+    
+      
     public String copy(String text){
-               
-        return 
+        
+        return text;
     }
+    public static void main(String[] args){
+        String str1 = "hello";
+        String str2 = "polly";
+        parrot.text;
+    } 
+    
 }
+
