@@ -70,8 +70,8 @@
     :count_tests: 2
     :count_tests_passed: 1
     :tests:
-      parrotTestHello: 1
-      parrotTestPolly: 0
+      parrotTestHello: 0
+      parrotTestPolly: 1
   Comparisons:
     :Week: 1
     :Order: 4
