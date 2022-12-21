@@ -16,9 +16,8 @@ public class Parrot {
         return text;
     }
     public static void main(String[] args){
-        String str1 = "hello";
-        String str2 = "polly";
-        parrot.text;
+       
+        System.out.println("yeah");
     } 
     
 }
