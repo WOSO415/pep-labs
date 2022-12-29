@@ -16,6 +16,14 @@ public class IfStatement {
      * @param y second number to be compared.
      * @return x if bool is true. if bool is false, return y.
      */
+
+    int x = 0;
+    int y = 1;
     public int ifExample(boolean bool, int x, int y){
-        ifExample(\\\, x, y)
-}
+        if (bool == true) {
+            return x;
+        } else if (bool == false){
+            return y;
+        }
+        return x;
+    }}
