@@ -1,3 +1,6 @@
+public class public static void main(String[] args) {
+    
+}
 public class EvenOrOdd {
     /**
      * Your challenge is to implement a method to determine if an int is even or odd. The method should return
