@@ -16,8 +16,9 @@ public class EvenOrOdd {
     public String decide(int n){
         if(n % n == 0){
             return "Even";
-        } else {
-            return "Odd";
+        }
+        return null; 
+            
         }
         
     
