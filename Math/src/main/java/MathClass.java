@@ -20,6 +20,6 @@ public class MathClass {
      */
     public double mathPow(double a, double b){
         
-       return b ;
+       return  Math.pow(a, b);
     }
 }
