@@ -24,6 +24,7 @@ public class GameMenu {
             if(correct){
                 System.out.println("You got the secret number! Thanks for playing");
                 playing = false;
+
             }else{
                 System.out.println("Incorrect!");
             }
