@@ -1,4 +1,5 @@
 import java.util.Deque;
+import java.util.LinkedList;
 /**
  * Stacks are LIFO - last in, first out, like a stack of plates or books, or the puzzle game "Towers of Hanoi".
  * They are used in algorithms where it is needed to keep track of the ordering in which the elements were inserted.
@@ -20,7 +21,8 @@ public class StackExercise {
      * @return a newly instantiated Deque. Deques implement both stack and queue behavior.
      */
     public Deque<String> createNewStack(){
-        return null;
+        Deque<String> deque = new LinkedList<String>();
+        return deque;
     }
 
     /**
@@ -28,7 +30,8 @@ public class StackExercise {
      * @return the number of elements in the deque.
      */
     public int getSize(Deque<String> stack){
-        return 0;
+        int num = stack.size();
+        return num;
     }
 
     /**
@@ -37,6 +40,8 @@ public class StackExercise {
      * @param item a String to be added to the deque.
      */
     public void addToTopOfStack(Deque<String> stack, String item){
+       
+        stack.push(item);
     }
 
     /**
@@ -46,7 +51,8 @@ public class StackExercise {
      * @return the value popped from the top of the deque.
      */
     public String removeFromTopOfStack(Deque<String> stack){
-        return "";
+        String removeele = stack.remove();
+        return removeele;
     }
     /**
      * Return the value at the top of a deque without removing the value.
@@ -54,6 +60,7 @@ public class StackExercise {
      * @return the value peeked from the top of the deque.
      */
     public String getTopOfStackWithoutRemoving(Deque<String> stack){
-        return "";
+        String getTop = stack.peek();
+        return getTop;
     }
 }
