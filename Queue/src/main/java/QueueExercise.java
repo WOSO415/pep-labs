@@ -61,7 +61,8 @@ public class QueueExercise {
      * @return the next String due to be removed (polled) from the Queue<String> (the oldest item in the queue.)
      */
     public String removeFromStartOfQueue(Queue<String> queue){
-        
+        String removeele = queue.remove();
+        return removeele;
     }
 
     /**
@@ -70,6 +71,7 @@ public class QueueExercise {
      * @return the next String due to be removed (peeked) from the Queue<String> (the oldest item in the queue.)
      */
     public String getStartOfQueueWithoutRemoving(Queue<String> queue){
-        return "";
+        String head = queue.peek();
+        return head;
     }
 }
