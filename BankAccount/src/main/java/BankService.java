@@ -33,10 +33,12 @@ public class BankService {
      * @param amount the amount to be withdrawn.
      */
     public void withdraw(double amount){
-               this.balance = balance -= amount;
-               if (amount < this.balance) {
+               
+               if (amount > balance) {
                 System.out.println("Insufficient Funds");
-               } 
+               } else {
+                this.balance = balance -= amount;
+               }
     }
 
     /**
