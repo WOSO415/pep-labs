@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -10,7 +11,13 @@ public class GetMax {
      * @return the largest value in arr.
      */
     public int max(int[] arr){
-        int most = Collections.max(Arrays.asList(arr));
-        return most;
+        int maxVal = 0;
+        
+        for (int i = 0; i < arr.length; i++) {
+            if (maxVal < arr[i]) {
+                maxVal = arr[i];
+            }
+        }
+        return maxVal;
     }
 }
