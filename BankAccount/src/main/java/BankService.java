@@ -23,7 +23,8 @@ public class BankService {
      * @param amount the amount to be deposited.
      */
     public void deposit(double amount){
-        balance = balance + amount;
+         this.balance += amount;
+        
     }
 
     /**
@@ -32,16 +33,21 @@ public class BankService {
      * @param amount the amount to be withdrawn.
      */
     public void withdraw(double amount){
-        if (amount > balance) {
-            
+        this.balance -= amount;
+        if (amount >= this.balance) {
+            System.out.println("no");
+        }  else {
+            this.balance -= amount;
         }
+        
     }
 
     /**
      * There is no need to change this method, it will be used in testing and in the menu class.
      * @return the user's balance.
      */
-    public double getBalance(){
+    public double getBalance(){             
         return 0;
     }
 }
+
