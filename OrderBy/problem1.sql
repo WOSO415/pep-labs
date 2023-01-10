@@ -1,0 +1,1 @@
+select * from character_table order by first_name asc;
