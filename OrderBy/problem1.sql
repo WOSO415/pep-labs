@@ -1,1 +1,1 @@
-select * from Character_table order by last_name asc and first_name;
+select * from character_table order by last_name and first_name asc ;
