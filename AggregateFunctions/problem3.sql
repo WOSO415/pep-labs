@@ -1,0 +1,1 @@
+select MIN(salary) from employee;
