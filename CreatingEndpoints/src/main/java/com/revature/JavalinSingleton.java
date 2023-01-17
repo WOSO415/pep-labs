@@ -1,6 +1,7 @@
 package com.revature;
 
 import io.javalin.Javalin;
+import kotlin.text.UStringsKt;
 
 public class JavalinSingleton {
 
@@ -15,7 +16,7 @@ public class JavalinSingleton {
         Javalin app = Javalin.create();
         
         //write endpoint here
-
+        GET
         return app;
     }
     
