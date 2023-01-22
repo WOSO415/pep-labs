@@ -66,4 +66,7 @@ public class Song {
             "}";
     }
 
+    public void getArtistName(String artistName2) {
+    }
+
 }
