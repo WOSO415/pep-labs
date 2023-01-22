@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 //
 
@@ -11,6 +12,14 @@ public class IndexOf {
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
     public int getIndex(int[] arr, int n){
+        int len = arr.length;
+        int i = 0;
+        while (i < len) {
+            if (arr[i] == n){
+                return arr.IndexOf(n);
+            }
+        }
         return -1;
     }
 }
+
