@@ -15,9 +15,7 @@ public class IndexOf {
         
         return indexOf(arr, n);
     }
-
-    private int indexOf(int[] arr, int n) {
-        return 0;
-    }
+    
+   
 }
 
