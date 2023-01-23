@@ -13,7 +13,7 @@ public class ReturnLongestString {
     public String longest(String[] arr){
         List<String> strings = Arrays.asList(arr);
         String longest = strings.stream().max(Comparator.comparingInt(String::length)).get();
-        int max = longest.length();
+        
         return longest;
         
     }
