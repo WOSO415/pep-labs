@@ -90,6 +90,9 @@ public class CreateTableWithForeignKey {
          */
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
+        
+       
+
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
@@ -98,5 +101,7 @@ public class CreateTableWithForeignKey {
         } catch (SQLException e) {
             System.out.println("problem1: " + e.getMessage() + '\n');
         }
+
+        
     }
 }
