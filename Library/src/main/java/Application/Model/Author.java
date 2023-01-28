@@ -9,6 +9,7 @@ import java.util.Objects;
 public class Author {
     int id;
     String name;
+    public String author;
     /**
      * A default, no-args constructor is REQUIRED for Jackson ObjectMapper to work.
      */
