@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 9
+  :count_tests_passed: 10
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 9
+  :count_tests_passed: 10
   Start:
     :Week: 1
     :Order: 1
@@ -816,10 +816,10 @@
     :Order: 9
     :Type: project
     :count_tests: 13
-    :count_tests_passed: 9
+    :count_tests_passed: 10
     :tests:
       getAllAuthorsDAOTest: 1
-      insertAuthorCheckWithGetAllTest: 0
+      insertAuthorCheckWithGetAllTest: 1
       getAllAuthorsServiceTest: 1
       addAuthorTest: 1
       getAllBooksTest: 1

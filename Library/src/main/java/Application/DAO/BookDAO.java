@@ -22,6 +22,7 @@ import java.util.List;
  * copies_available, which is of type int.
  */
 public class BookDAO {
+    
     /**
      * TODO: retrieve all books from the Book table.
      * You only need to change the sql String.
@@ -57,7 +58,7 @@ public class BookDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "SELECT * FROM Book WHERE isbn = (?)";
+            String sql = "SELECT * FROM book WHERE isbn = (?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
@@ -87,12 +88,12 @@ public class BookDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "insert into book (name) values ('?')" ;
+            String sql = "insert into book (title) values (?)" ;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             
             
             //write preparedStatement's setString and setInt methods here.
-            preparedStatement.setString(1, Book.book);
+            preparedStatement.setString(1, book.getTitle());
             preparedStatement.executeUpdate();
             return book;
         }catch(SQLException e){
