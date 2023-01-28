@@ -5,7 +5,7 @@ package Application.Model;
  * Do not modify anything in this class.
  */
 public class Book {
-    int isbn;
+    public int isbn;
     int author_id;
     String title;
     int copies_available;
