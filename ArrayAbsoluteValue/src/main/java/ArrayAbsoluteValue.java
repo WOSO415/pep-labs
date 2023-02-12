@@ -9,15 +9,13 @@ public class ArrayAbsoluteValue {
      * @param nums an array.
      * @return the absolute value array of nums.
      */
-    int[][] getAbsoluteValues;
+    
     public int[] getArrayAbs(int[] nums){
-        
-
-        int[] absoluteValues = getAbsoluteValues[nums.length];
+        int[] result = new int[nums.length];     
             for (int i = 0; i < nums.length; i++) {
-                absoluteValues[i] = Math.abs(nums[i]);
+                result[i] = Math.abs(nums[i]);
             }
-        return absoluteValues;
+        return result;
      
     }
 }
