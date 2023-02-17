@@ -10,7 +10,17 @@ public class CharComparison {
      * @param b an array of char.
      * @return -1 if A is less than B, 1 if A is greater than B, and 0 if the two arrays are identical.
      */
-    public int compare(char[] a, char[] b){
-        return 0;
+    public String returnPigLatin(String in) {
+        String convertToPigLatin(String word) {
+            String lowerCaseWord = word.toLowerCase();
+            char firstLetter = lowerCaseWord.charAt(0);
+    
+            if (firstLetter == 'a' || firstLetter == 'e' || firstLetter == 'i' || firstLetter == 'o' || firstLetter == 'u') {
+                return lowerCaseWord + "ay";
+            } else {
+                return lowerCaseWord.substring(1) + firstLetter + "ay";
+            }
+        }
     }
 }
+
