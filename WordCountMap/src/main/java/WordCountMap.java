@@ -16,6 +16,21 @@ public class WordCountMap {
      */
     public Map<String, Integer> returnWordMap(String words){
 
-        return null;
+        if (words == null || words.length() == 0) {
+            // If the input string is empty or null, return an empty map
+            return new HashMap<>();
+        }
+        String[] tokens = words.split("\\s+"); // Split the input string into individual words
+        Map<String, Integer> wordMap = new HashMap<>();
+        for (String token : tokens) {
+            if (!wordMap.containsKey(token)) {
+                // If the word is not already in the map, add it with a frequency of 1
+                wordMap.put(token, 1);
+            } else {
+                // If the word is already in the map, increment its frequency by 1
+                wordMap.put(token, wordMap.get(token) + 1);
+            }
+        }
+        return wordMap;
     }
 }
