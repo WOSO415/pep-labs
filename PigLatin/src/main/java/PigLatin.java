@@ -17,26 +17,16 @@ public class PigLatin {
      * @return the pig latin form of in.
      */
     public String returnPigLatin(String in){
-        String ans = "";
-        for (int i = 0; i < in.length(); i++) {
-            int j = i;
-            if (i >= in.length())
-                break;
-            while (i < in.length() && in.charAt(i) != ' ')
-                i++;
-            if (ans.isEmpty()) {
-                ans = ans.concat(
-                    in.substring(j + 1, i)
-                    + in.charAt(j) + "ay");
-            }
-            else {
-                ans = ans.concat(
-                    " " + in.substring(j + 1, i)
-                    + in.charAt(j) + "ay");
-            }
+        String lowerCaseWord = in.toLowerCase();
+        char firstLetter = lowerCaseWord.charAt(0);
+
+        if (firstLetter == 'a' || firstLetter == 'e' || firstLetter == 'i' || firstLetter == 'o' || firstLetter == 'u') {
+            return lowerCaseWord + "ay";
+        } else {
+            return lowerCaseWord.substring(1) + firstLetter + "ay";
         }
-        return ans;
     }
-   
 }
+   
+
 
